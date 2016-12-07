@@ -13,6 +13,13 @@ The group provides a forum for the advancement of existing and new mechanisms fo
 3. Descriptions of implementations of annotation capture, transport, and management mechanisms in use and in development in the biodiversity informatics community; and
 4. Applicability statements of annotation standards and concepts from other communities.
 
+## Charter
+
+Annotations Interest Group [Charter](http://www.tdwg.org/activities/annotations-test/ "Annotations Interest Group Charter")
+
 ## How to contribute
 
-*Depending on where group interaction takes place (GitHub, mailing list), provide some guidance on how interested parties can follow group activities (e.g. watch this repository, join mailing list) and how they can contribute.*
+* Watch this github project.
+* Submit or comment on an issue on this github project.
+* Email the TDWG-Content list.
+
