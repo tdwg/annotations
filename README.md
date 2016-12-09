@@ -1,5 +1,7 @@
 # Annotations Interest Group
 
+The Annotations Interest Group is chartered to provide a forum for discussion about all aspects of annotations in biodiversity informatics, to develop cross-linkages with other interest groups and standards, and to generate Task Groups to develop specific standards and best practices related to the annotation of biodiversity data.
+
 ## Rationale
 
 This group serves as a forum for the discussion of mechanisms and concepts for the annotation of all kinds of biodiversity data.
