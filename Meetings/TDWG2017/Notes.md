@@ -1,14 +1,14 @@
 # Annotations Interest Group Meeting TDWG 2017 #
 
-Present: Lutz Suhriber, Paul Morris, Okka Tschoepe, Alex Thompson, Arthur Chapman. 
+Present: Lutz Suhriber (BGBM), Paul J. Morris (MCZ), Okka Tschoepe (BGBM), Alex Thompson (iDigBio), Arthur Chapman (BDQIG Convener). 
 
 Introductions.
 
-Alex Thomoson as new Co-Convener.
+Introduced Alex Thomoson as new Co-Convener.
 
-Question raised by Walter B. Merge the annotations IG into DQ IG.
+Question raised by Walter Berendsohn: Merge the annotations IG into DQ IG?
 
-Discussion: Overlap, but distinct.  Arthur and Alex don't see them merging.  
+Discussion: Overlap, but distinct.  Arthur and Alex don't see them merging.  Consensus, keep as distinct interest groups. 
 
 Some notes from SPNHC:
 
@@ -18,11 +18,11 @@ Looked at using measurement or fact to record annotations.  Viewed as not a good
 
 Alex: Reverse: map measurement or fact and resource relationship into annotations - assert reslurce relations as 
 
-Annotations into vocabulary suggested by John W.
+Using annotations for managing provenance of additions into vocabulary has been suggested by John Wieczorek.
 
 Alex: Who adds things to vocabularies.  Life Stage vocabulary.  Every addition to vocabulary gets an annotation indicating the source.
 
-Arthur Advanatage of annotations 
+Arthur: Key advanatage of annotations is ability to conduct annotation conversations.
 
 Lutz: Using annotations of annotations in AnnoSys, ultimately up to the curator to accept or act on.
 
@@ -30,11 +30,13 @@ Arthur: Avoiding repeated annotations of potentially problematic data that are a
 
 Alex: Scope of Annosys? 
 
-Lutz: Annosys: As propagator of messages.
+Lutz: We see AnnoSys as propagator of messages.
 
 Alex: To what extent is Annosys able to update source databases?
 
 Lutz: No access to the source database - difficulties with schema mapping.
+
+Discussion of FilteredPush schema mapping into Specify6.  Three complexities: exchange schema concept to field mappings that aren't one to one (one term mapping to more than one field or vice versa), mapping exchance schema onto relations in relational database (need to locate specimen record, locate taxon record, add an identification record, etc., including understanding of the buisness logic), and need to provide values for required fields where data is not present in the annotation (e.g. add a family in order to add a genus in order to add a species to use in an identification).  Overall needs deep knowledge of the database schema and the exchange schema.  Non-trivial, but possible to do on a single database schema to exchange schema mapping, much harder problem to generalize. 
 
 Acton Item (create issue): Propose a Task Group charter for an Applicability Statement about the W3C annotation data model and use cases/best practices for data quality assertions using the W3C annotation data model.
 
