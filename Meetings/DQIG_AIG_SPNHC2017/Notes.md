@@ -96,16 +96,101 @@ Joanne: Guidance for multilingual values for each term?
 
 Arthur: Something that needs to be discussed in the scoping document.
 
+## TG1, the Framework ##
+
+There have been repeated discussions of what to call the report element Allan originally called Enhancement.
+
+“Enhancement” may not work with some audiences.  For example if you ask  a curator top enhance their data they will get angry  (amendment better).
+
+James:  Don’t need to feed back all terminology to curator – amendment
+
+Must use common terminology.
+
+Walter “Enhancement actually adds data” therefore Enhancement may be a true Enhancement.
+
+Enhancement – means better … - it might not make data better – may not be an improvement.
+
+“Enrichment”
+
+“Measures” not Measure in Glossary of terms.
+
+Training exercise to interpret the need for Enhancement (tied to user needs) and Amendment – related to the Quality.
+
+Raised – problem of institutions generalising their export (drop the seconds for example) but not changing the Precision or Uncertainty in meters.
+
+NB Suggested that not use data custodian – data provider (Allan uses data holder)
+
+Dimension:
+
+NB In Glossary of Terms 
+
+DQ Dimension “precision” should be “resolution”
+
+## Discussion of TG2 Tests ## 
+
+Paul: Extracted from GBIF – all records where latitude and longitude inverted. Ran Kurator workflow on them.  Results don't agree. Key problem: Different tests give different answers
+
+How do we present the output of tests to the user.
+
+W3C – can have a conversation of annotations.
+
+How can we represent the annotations from the DQ reports in useful ways
+
+Day=O Day Consistent with Month/Year:  DATA_PREREQUISIT_NOT_MET
+
+Sequencing important – Day=O test before consistent with Month/Year.
+
+Order of tests – a graph if not done in an order could get different results.
+
+Rule set – if this test fails then there is no need to run these other tests as they won’t work anyway
+(e.g. latitude out of range then centre of country/terrestrial etc. outliers tests are redundant
 
 ## Discussion of how to represent data quality assertions ##
 
-Paul: Proposal from John W., add a Darwin Core extension for data quality assertions, have a short vocabulary derived from the framework (this is a validation, this is its identifier, this is the result asserted on this core record, this is status commentary, etc).
+Greg: confusion between IPT and DwC
 
-Discussion: Viewed by many in the room as highly problematic.  Issues include mixing data and data quality asserions in one Darwin Core archive document.  Unclear how to interpret Ammendments therein.  Overall consensus this isn't an approach to pursue.
+Greg: If want in a DwCArchive need a more straight forward -IPT) – better than trying to shoehorn into another set of definitions.
 
-Paul: Prov-O? 
+Lots of discussion on best way to transmit Annotations
 
-Brief discussion, worth further investigation.
+Paul: Proposal from John W., use Darwin Core Measurement or Fact for data quality assertions, have a short vocabulary derived from the framework (this is a validation, this is its identifier, this is the result asserted on this core record, this is status commentary, etc).
+
+John Wieczorek
+
+DarwinCore: MeasurementOrFact
+
+Definition: A measurement of or a fact about a …”see Pauls slides)
+
+#measurementID
+#measurementType Data Quality Validation (Validation|measure|Amendment) careful about vocabulary DQmeasure?
+#measurementValue COMPLIANT (COMPLIANTNOT COMPLIANT)
+#measurementAccuracy
+#measurementUnit
+#measurementDeterminedBy -DQFramework:Mechanism” “event_date_qc v1.03  DwCEventQC
+#measurementSeterminedDate
+#measurementMethod DAY_IN_RANGE: 48aa7d66-36d1 ……
+#measurementRemarks Provided value for dwc:day of “10” is in the range 1-31
+
+Problem or order
+Can’t send an annotation of an annotation
+
+Reasons not to do above (overloading of measurementOfFact) Not flat and trying to force into Flat format /confusing to users)
+
+Discussion: Viewed by many in the room as highly problematic.  Issues include mixing data and data quality asserions in one Darwin Core archive document.  Representing not-flat structure from framework as flat, no mechanism to annotate the annotations. Unclear how to interpret Ammendments therein.  Overall consensus this isn't an approach to pursue.
+
+### Prov-o? ###
+
+W3C Prov – representation of Prevenance  The things we have done – worth further and deeper investigation.
+
+May be good mechanism for describing where data quality reports have come from.
+
+See Bertram L. and see if a student can ….
+Entity  <>  Activity  <>  Agent
+
+May be a good way of describing all entitities  [CHASE UP]
+	Work flow description
+
+Brief discussion, W3C Prov-o is worth further investigation.
 
 ### Using the W3c annotation data model ###
 
@@ -247,3 +332,20 @@ Kurator-FFDQ(F2UF) proof of concept JSON serialization
       "sources" : null,
       "enhancement" : "Recommendation to fill in [eventDate] based on values from atomic fields [verbatimEventDate, startDayOfYear, endDayOfYear, year, month, day]"
 
+
+Annotation: Time/who/when – Target -Body
+
+One Annotation can have as its target another Annotation – conversation of annotation assertions
+An annotation on a data record can be treated as an issue (like bug tracking)
+A subsequent annotation can mark the first annotation as resolved (or as a won’t fix)
+
+W3C about documents on the Web – not about data
+
+So would have to extend  the PathSelector mechanism to refer to Data rather than a document
+Query – why not pack with GUIDs rather than use Selector?PathSelector too application specific.
+
+Could do that.	
+
+Walter – why not store the record and the annotation together.
+
+How are these going to be delivered?
