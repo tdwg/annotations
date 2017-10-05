@@ -50,6 +50,12 @@ Examined a skeletat W3C web annotation data model annotation:
      }
 
 
+Some questions (inn relation to data quality assertions): 
+
+Mechanism in the body or the creator?   Discussion, seems good fit to creator.  Generator is defined as what serialized the annotation, which might or might not be the same software as the Mechanism. 
+
+Initial values in the target or the body?  Discussion, perhaps best represented in the body.
+
 Suggestion- oa:body, add a type, DWCDocument.  Add a type JSONBody.
 
 Path forward: Action item: put an issue into the AIG github presence to draft a charter for TG.  Action item: send email to TDWG content about this issue soliciting interest.
