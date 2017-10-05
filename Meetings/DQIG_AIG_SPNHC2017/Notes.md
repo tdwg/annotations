@@ -1,5 +1,7 @@
 # Notes from the Joint Data Quality/Annotations interest group meeting at SPNHC 2017 #
 
+SPNHC pre-meeting full day workshop, held 2017-June-18 in Denver, CO, USA.
+
 * Notes are not comprehensive, and were taken in part by Arthur Chapman and in part by Paul J. Morris.
 
 Attendees (by approximate order of introductions and location in the room): 
