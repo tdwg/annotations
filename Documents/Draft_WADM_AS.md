@@ -2,9 +2,17 @@
 
 This is a very draft start on a document eventually intended for a TDWG standards track, possibly as an Applicability Statement (AS).  It is currently very much in draft form, is in no way normative, and may change at any time.
 
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119
+
 ## Web Annotation Data Model ##
 
-In 2016, the World Wide Web Consortium (W3C), ratified the Web Annotation Data Model as a recommendation.
+In February 2017 the World Wide Web Consortium (W3C) published the Web Annotation Data Model https://www.w3.org/TR/annotation-model as a recommendation.  
+
+"The Web Annotation Data Model provides an extensible, interoperable framework for expressing annotations such that they can easily be shared between platforms, with sufficient richness of expresson to satify complex requirements while remaining dimple enough to also allow for the most common use cases, such as attaching a piece of text to a singe web resource."  (Sanderson et al., 2017).
+
+## Serialization and Transport ##
+
+The Web Annotation data model has a preferred serialization of JSON-LD, with a media type of applcation/ld+json;profile="http://www.w3.org/ns/anno.jsonld"  Biodiversity uses MAY serialize annotations as JSON-LD.   In a separate recommendation, the W3C also provides a specification for a transport protocol for annotations (Sanderson, 2017).
 
 ## Creator and Generator ##
 
@@ -139,3 +147,14 @@ determining, applying a scientific name to a biodiversity data object.
 # Contributors #
 
 Paul J. Morris, Museum of Comparative Zoology
+
+# Citations #
+
+
+Bradner, S. 1997. Network Working Group Request for Comments: 2119; Key words for use in RFCs to Indicate Requirement Levels.  IETF Best Current Practice.  https://ietf.org/rfc/rfc2119.txt
+
+Sanderson, R., Ciccarese, P., Young B. eds. 2017.  Web Annotation Data Model, W3C Recommendation.  https://www.w3.org/TR/annotation-model/ 
+
+Sanderson, R. ed., 2017. Web Annotation Protocol W3C Rccommendation https://www.w3.org/TR/annotation=protocol/ 
+
+
