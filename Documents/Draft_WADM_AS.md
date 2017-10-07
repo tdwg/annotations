@@ -2,7 +2,7 @@
 
 This is a very draft start on a document eventually intended for a TDWG standards track, possibly as an Applicability Statement (AS).  It is currently very much in draft form, is in no way normative, and may change at any time.
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119
+The upper case key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119.
 
 ## Web Annotation Data Model ##
 
@@ -10,9 +10,15 @@ In February 2017 the World Wide Web Consortium (W3C) published the Web Annotatio
 
 "The Web Annotation Data Model provides an extensible, interoperable framework for expressing annotations such that they can easily be shared between platforms, with sufficient richness of expresson to satify complex requirements while remaining dimple enough to also allow for the most common use cases, such as attaching a piece of text to a singe web resource."  (Sanderson et al., 2017).
 
+The Web Annotation Data Model SHOULD be used to represent annotations of data objects in the biodiversity domain.
+
+In botany, the term Annotation has long been used to describe the addition of information to herbarium sheets by botansts.  Botanical annotations are often new determinations of the scientific name to be applied to a specimen on a herbarium sheet, or an expression of concurrence by a specialist with an existing determinations, and in some cases, corrections or supplements to other information on the sheet.  Botanical annotations are sometimes handwritten on the herbarium sheet, or somtimes provided on separate pieces of paper that are affixed to the herbarium sheet.  Herbaria vary in their practices regarding aligning the identification history recorded in annotations on the herbarium sheet with the identification history for that sheet stored in the database of record for that herbarium.  
+
+Botanical annotations are subset of the kinds of assertions that can be represented in biodiversity informatics on biodiversity data objects.  Care should be taken when discussing annotations with botanists as the term may carry a connotation for them of identifications that are physically associated with a herbarium sheet, and they may percieve a requirement that all annotations be physically associated with the herbarium sheet.
+
 ## Serialization and Transport ##
 
-The Web Annotation data model has a preferred serialization of JSON-LD, with a media type of applcation/ld+json;profile="http://www.w3.org/ns/anno.jsonld"  Biodiversity uses MAY serialize annotations as JSON-LD.   In a separate recommendation, the W3C also provides a specification for a transport protocol for annotations (Sanderson, 2017).
+The Web Annotation data model has a preferred serialization of JSON-LD, with a media type of applcation/ld+json;profile="http://www.w3.org/ns/anno.jsonld"  Biodiversity uses MAY serialize annotations as JSON-LD.   In a separate recommendation, the W3C also provides a specification for a transport protocol for annotations (Sanderson, 2017).  This annotation protocol MAY be used in biodiversity information systems.
 
 ## Creator and Generator ##
 
@@ -48,8 +54,7 @@ The target of the annotation SHOULD include a copy of any data in the original r
 
 The target of the annotation MAY include a full copy of the data in original record at the time of annotation.
 
-When a versioned, resolvable, persistent identifier from which the data record at the time it was annotated is available, then the target of the annotation MAY 
- assert only that identifier in the 
+When a versioned, resolvable, persistent identifier from which the data record at the time it was annotated is available, then the target of the annotation MAY assert only that identifier in the target of the annotation.
 
 ## An example data quality assertion ##
 
