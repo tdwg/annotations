@@ -4,7 +4,7 @@ Present: Lutz Suhriber (BGBM), Paul J. Morris (MCZ), Okka Tschoepe (BGBM), Alex 
 
 Introductions.
 
-Introduced Alex Thomoson as new Co-Convener.
+Introduced Alex Thompson as new Co-Convener.
 
 Question raised by Walter Berendsohn: Merge the annotations IG into DQ IG?
 
@@ -16,7 +16,7 @@ Reviewed using W3C annotation data model assertion wrapping a data quality asser
 
 Looked at using measurement or fact to record annotations.  Viewed as not a good idea.
 
-Alex: Reverse: map measurement or fact and resource relationship into annotations - assert reslurce relations as 
+Alex: Reverse: map measurement or fact and resource relationship into annotations - assert resource relations as 
 
 Using annotations for managing provenance of additions into vocabulary has been suggested by John Wieczorek.
 
