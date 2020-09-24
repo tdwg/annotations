@@ -1,0 +1,25 @@
+{
+	"@context": {
+		"anno": "http://www.w3.org/ns/anno.jsonld",
+ 		"dwc" : "http://rs.tdwg.org/dwc/terms/"
+	},
+	"@id": "urn:uuid:08068630-d531-4236-826e-8a078701be38",
+	"@type": "anno:Annotation",
+	"anno:Motivation":"anno:classifying",
+  	"body": {
+		"@type":"dwc:Identification",
+		"dwc:genus":"Hyperolius",
+		"dwc:dateIdentified": "2011-06-03",
+		"dwc:identifiedBy":"Breda M. Zimkus",
+		"selector": {
+      		"@type": "anno:FragmentSelector",
+      		"conformsTo": "http://www.w3.org/TR/media-frags/",
+      		"value": "#t15,25"
+		}
+	},
+  	"target": {
+    	"@id": "https://mczbase.mcz.harvard.edu/specimen_images/herpetology/audio/mp3/A147896_H_sp_call.mp3",
+    	"type": "Audio",
+		"format": "audio/mpeg"
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"@context": {
+		"anno": "http://www.w3.org/ns/anno.jsonld",
+ 		"dwc" : "http://rs.tdwg.org/dwc/terms/"
+	},
+	"@id": "urn:uuid:737cc5a8-73c1-4dae-93ba-117b10c7d043",
+	"@type": "anno:Annotation",
+	"anno:Motivation":"anno:classifying",
+  	"body": {
+		"@type":"dwc:Identification",
+		"dwc:order":"Geophilomorpha",
+		"dwc:dateIdentified": "2015-09-23",
+		"dwc:identifiedBy":"Gonzalo Giribet",
+		"dwc:identificationRemarks":"Field ID",
+		"selector": {
+      		"@type": "anno:FragmentSelector",
+      		"conformsTo": "http://www.w3.org/TR/media-frags/",
+      		"value": "#xywh=80,45,798,662"
+		}
+	},
+  	"target": {
+    	"@id": "https://mczbase.mcz.harvard.edu/specimen_images/invertebrates/large/MCZ-71257_Worm_2.jpg",
+    	"type": "Image",
+		"format": "image/jpeg"
+	}
+}
