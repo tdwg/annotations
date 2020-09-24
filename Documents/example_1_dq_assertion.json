@@ -1,0 +1,42 @@
+{ 
+	"@context": { 
+		"anno" : "http://www.w3.org/ns/anno.jsonld",
+	 	"ffdq" : "http://example.org/ffdq/",
+ 		"dwc" : "http://rs.tdwg.org/dwc/terms/", 
+	 	"dwciri" : "http://rs.tdwg.org/dwc/iri/"
+	}, 
+	"@id":"urn:uuid:350d0ca2-628d-4137-83d6-9090e9d573b5",
+	"@type": "anno:Annotation",
+	"anno:motivation":"anno:assessing",
+	"anno:creator": {    
+		"@id":"urn:uuid:b844059f-87cf-4c31-b4d7-9a52003eef84",
+		"anno:type": "Software",
+		"anno:name" : "Kurator: Date Validator - DwCEventDQ" 
+	},
+	"anno:created" : "2020-09-24",
+	"anno:generator" : "hand written",
+	"anno:generated" : "2020-09-24",
+	"anno:body" : {
+		"@type": "anno:Dataset",
+		"ffdq:Report" : { 
+		"ffdq:Validation" : { 
+        	"id": "urn:uuid:4f2bf8fd-fc5c-493f-a44c-e7b16153c803",
+                "label": "VALIDATION_EVENTDATE_NOTSTANDARD",
+                "ffdq:Result" : { 
+                   "ffdq:resultStatus" : "NOT_COMPLIANT",
+                   "ffdq:resultState" : {
+                       "state": "RUN_HAS_RESULT",  
+                       "comment":"The provided value for dwc:eventDate '1922-01.01' is not formated as an ISO date."
+                   }
+                }, 
+                "ffdq:informationElement" : [ "dwc:eventDate" ]
+             } 
+        }
+	},
+	"anno:target": {
+		"@type":"anno:Dataset",
+        "@id" : "https://www.gbif.org/occurrence/476960560",
+        "dwciri:occurrenceID" : "urn:catalog:MCZ:Mala:120551",
+        "dwc:eventDate" : "1922-01.01"
+    }
+}
