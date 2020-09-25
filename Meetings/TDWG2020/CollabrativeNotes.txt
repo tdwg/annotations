@@ -1,0 +1,135 @@
+TDWG 2020 Annotations Interest Group
+
+Attendee list at the end
+
+
+
+Agenda
+
+(1) Reports from the Community
+AnnoSys
+
+    Production system, collecting annotations on occurrences
+
+ALA
+
+    Production system, in long use, collecting annotations on occurrences
+
+iDigBio
+
+    ePanda project, assertions linking literature to occurrence records with certainty metadata
+
+BDQ IG
+
+    Data Quality Test definitions, can make data quality assertions on occurrence records which could be expressed as annotations.
+
+Extended Specimens/Open DS
+
+    Potential transactional model for sharing occurrence data, natural fit to annotations
+
+AC IG
+
+    Working with sounds over last 6 months, segmenting sound into segments seems to have relationship to annotations.   Most multimedia types have similar issue of regions of interest to refer to.  Segmentation and attributing segmentation to an agent. 
+
+
+    https://github.com/tdwg/ac/blob/master/sound/bioacoustic_segment_vocabs.pdf
+
+
+    Brief discussion of FilteredPush, look back to its experience, products, and use cases.
+
+
+Attributions IG
+
+    W3C annotation model seems good fit to needs.  Size of pipeline is a concern. Closed loop back to source desired.
+
+DINA (James)
+Others
+
+(2) Chartering a Task Group for an Applicability Statement for the W3C Web Annotation Vocabulary and Data Model.
+
+https://github.com/tdwg/annotations/blob/master/Documents/Draft_Charter_For_TG_For_AS.md
+
+Core Members
+* James Macklin
+* Paul Morris
+* Robert Sanderson
+* Steve Baskauf (representing Audubon Core, can also communicate with Darwin Core MG)
+* Dan Stowell (if time allows)
+* Arthur Chapman (representing Data Quality Interest Group)
+
+
+(3) Discussion  of example Annotations
+
+Determination applied to region of interest in image
+https://github.com/tdwg/annotations/blob/master/Documents/example_2_image_roi.json
+
+Audio Region of Interest (in time domain)
+https://github.com/tdwg/annotations/blob/master/Documents/example_3_audio_roi.json
+
+Dan Stowell: Need to annotate points in time, time regions, and time/frequency regions. For frequency regions, this can be handled as an "extension" to the W3C model. However, the W3C Media Fragments time model *might* be rather limited since its syntax cannot express points-in-time. To consider.
+  > https://iiif.io/api/annex/openannotation/#point-selector was created in the IIIF community to deal with points-in-time
+
+Data Quality Assertion
+https://github.com/tdwg/annotations/blob/master/Documents/example_1_dq_assertion.json
+
+
+ATTENDEEs
+Please put you name here
+
+Tim Robertson (GBIF)
+James Macklin (AAFC, Ottawa)
+Paul Morris (Museum of Comparative Zoology, USA)
+Brenda Daly (SANBI)
+David Shorthouse (AAFC, Ottawa)
+Nicky Nicolson (RBG Kew)
+Christina Byrd (Harvard Museum of Comparative Zoology, USA)
+Nicholas Rejack (iDigBio/ACIS Lab at University of Florida)
+Maarten Trekels (Meise Botanic Garden)
+Nicolas Noé(Open science lab for biodiversity, INBO, Belgium)
+Damiano Oldoni (INBO, Open science lab for biodiversity, Belgium)
+Margaret O'Brien (UC Santa Barbara)
+Niels Raes (Naturalis Biodiversity Center)
+Dan Stowell (Queen Mary University of London) ,
+Arthur Chapman (Data Quality Interest Group, Australia)
+Rui Andrade (AzoresBioPortal, University of Azores)
+Kari Lahti (FinBIF, Finland)
+Rui Figueira (GBIF Portugal)
+Dag Endresen (GBIF Norway)
+Rukaya Johaadien (GBIF Norway)
+Cam Webb (University of Alaska Museum of the North)
+Rich Rabeler (Univ. of Michigan Herbarium)
+Eirik Rindal (University of Oslo, Norway)
+Mathias Dillen (Meise Botanic Garden)
+Paula Zermoglio (VertNet)
+Peter Grobe (Zoological Research Museum Alexander Koenig, Bonn, Germany)
+Sophia Ratcliffe (NBN Trust, UK)
+Josh Humphries (NHM, London)
+Richard Pyle (Bishop Museum)
+Takeru Nakazato (Database Center for Life Science, Japan)
+ Andrew DOll (DMNS/Arctos)
+ Nina Filippova (Yugra State University, Russia)
+ Abby Benson (USGS, GBIF-US, OBIS-USA)
+ Robert Sanderson (Yale University, USA)
+ Jodi Shippee (Vermont Natural Heritage Inventory, USA)
+ Dave Smith (Natural History Museum, London)
+ Thomas Orrell (NMNH, Smithsonian)
+ Steve Baskauf (Vanderbilt University Libraries)
+ Jeroen Creuwels (NLBIF, Naturalis Biodiversity Centre, NL)
+ Deborah Paul (Species File Group, UIUC, US)
+ Niels Klazenga (Royal Botanic Gardens Victoria, AU)
+Mikko Heikkinen (Finnish Museum of Natural History & FinBIF)
+John Wieczorek (VertNet, Rauthiflor, Argentina)
+Wouter Addink (Naturalis Biodiversity Center, NL)
+Esther Mwangi (National Museums of Kenya, Kenya)
+Matthew Blissett (GBIF)
+Patrícia Madeira (CIBIO-Açores, Portugal)
+Andy Bentley (Biodiverity Institute, KU; BCoN)
+Erica Krimmel (iDigBio, Florida State University)
+Tomer Gueta (bdverse)
+David Fichtmueller (BGBM Berlin, Germany)
+Arnold Andreasson. Sweden
+Christian Köhler (ganzgraph, Bonn, Germany)
+Peggy Newman (Atlas of Living Australia, Melbourne)
+Cesar Cordeiro (Universidade Federal do Rio de Janeiro, Brazil)
+Lutz Suhrbier (BGBM Berlin, Germany)
+Rebecca Snyder (NMNH, Smithsonian)
