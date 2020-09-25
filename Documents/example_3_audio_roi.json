@@ -14,7 +14,7 @@
 		"selector": {
       		"@type": "anno:FragmentSelector",
       		"conformsTo": "http://www.w3.org/TR/media-frags/",
-      		"value": "#t15,25"
+      		"value": "#t=15,25"
 		}
 	},
   	"target": {
